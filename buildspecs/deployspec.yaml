@@ -1,5 +1,5 @@
 version: 0.2
-
+ 
 phases:
   install:
     runtime-versions:
@@ -7,7 +7,7 @@ phases:
     commands:
       - pyenv install -s 3.9.0
       - pyenv global 3.9.0
-
+ 
   build:
     commands:
       - sam build
@@ -15,4 +15,4 @@ phases:
       - cd front-end-react
       - npm install
       - npm run build
-      - aws s3 ync --acl public-read build s3://zaidanrizq1-trivia-app-bucket/
+      - aws s3 sync --acl public-read build s3://zaidanrizq1-trivia-app-bucket/
