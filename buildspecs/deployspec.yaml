@@ -15,4 +15,4 @@ phases:
       - cd front-end-react
       - npm install
       - npm run build
-      - aws s3 ync --acl public-read build s3://zaidan1-trivia-app-bucket/
+      - aws s3 ync --acl public-read build s3://zaidanrizq1-trivia-app-bucket/
